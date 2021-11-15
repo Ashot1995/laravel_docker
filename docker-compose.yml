@@ -37,7 +37,7 @@ services:
 
     #MySQL Service
     db:
-        image: mysql:5.7.22
+        image: mysql:5.7.32
         container_name: db
         restart: unless-stopped
         tty: true
@@ -45,6 +45,7 @@ services:
             - "3306:3306"
         environment:
             MYSQL_DATABASE: laravel_web
+            MYSQL_HOST: localhost
             MYSQL_ROOT_PASSWORD: replace_mysql_root_password
             SERVICE_TAGS: dev
             SERVICE_NAME: mysql

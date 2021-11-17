@@ -1,0 +1,35 @@
+[
+  {"id": 1,
+    "Authors": [
+      {"id": 1, "name": "Тестовый автор", "name_en": "Test author"}
+    ],
+    "Company": [
+      {"id": 1, "name": "Лукойл", "name_en": "Lukoil"}
+    ],
+    "Participants": [
+      {"id": 1, "name": "Иванов Иван Иванович", "name_en": "Ivanov Ivan Ivanovich"}
+    ],
+    "AdditionalInformation": "Дополнительная информация",
+    "Type": 1,
+    "logoType": "google_drive",
+    "stateId": 2,
+    "Files": [
+      {"id": 1, "name": "тестовое имя1", "directories":"folder1/folder1/", "extensionsType":"pdf"},
+      {"id": 2, "name": "тестовое имя2", "directories":"folder1/", "extensionsType":"audio"},
+      {"id": 3, "name": "тестовое имя3", "directories":"folder1/folder1/", "extensionsType":"video"},
+      {"id": 4, "name": "тестовое имя4", "directories":"folder1/", "extensionsType":"xls"},
+      {"id": 5, "name": "тестовое имя5", "directories":"folder1/folder1/", "extensionsType":"doc"},
+      {"id": 6, "name": "тестовое имя6", "directories":"folder1/folder1/", "extensionsType":"txt"},
+      {"id": 7, "name": "тестовое имя7", "directories":"/", "extensionsType":"zip"},
+      {"id": 8, "name": "тестовое имя8", "directories":"folder1/", "extensionsType":"img"},
+      {"id": 9, "name": "тестовое имя9", "directories":"folder1/folder1/", "extensionsType":"pdf"},
+      {"id": 10, "name": "тестовое имя10", "directories":"folder1/folder1/", "extensionsType":"audio"},
+      {"id": 11, "name": "тестовое имя11", "directories":"folder1/folder1/", "extensionsType":"video"},
+      {"id": 12, "name": "тестовое имя12", "directories":"folder1/", "extensionsType":"xls"},
+      {"id": 13, "name": "тестовое имя13", "directories":"folder1/folder1/", "extensionsType":"doc"},
+      {"id": 14, "name": "тестовое имя14", "directories":"folder1/folder1/", "extensionsType":"txt"},
+      {"id": 15, "name": "тестовое имя15", "directories":"folder1/folder1/", "extensionsType":"zip"},
+      {"id": 16, "name": "тестовое имя16", "directories":"folder1/folder1/", "extensionsType":"img"}
+    ]
+  }
+]

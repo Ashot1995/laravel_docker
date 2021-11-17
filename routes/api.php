@@ -25,6 +25,17 @@ Route::group([
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/refresh', [AuthController::class, 'refresh']);
     Route::get('/user-profile', [AuthController::class, 'userProfile']);
+
+    Route::get('/client-storages', function (){
+        return asset('config/ClientStorages.json');
+    });
+    Route::get('/main-storages', function (){
+        return asset('config/MainStorage.json');
+    });
+    Route::get('/party-storages', function (){
+        return asset('config/ThirdPartyStorages.json');
+    });
+
 });
 
 Route::get('/{any}', function () {

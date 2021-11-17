@@ -23,7 +23,6 @@ class AuthController extends Controller
 
     /**
      * Get a JWT via given credentials.
-     *
      * @return JsonResponse
      */
     public function login(Request $request):JsonResponse
@@ -65,10 +64,10 @@ class AuthController extends Controller
             ['password' => bcrypt($request->password)]
         ));
 
-        return response()->json([
-            'message' => 'User successfully registered',
-            'user' => $user
-        ], 201);
+        if (!$token = auth()->attempt($validator->validated())) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+        return $this->createNewToken($token);
     }
 
 

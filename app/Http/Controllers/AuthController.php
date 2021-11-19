@@ -51,6 +51,8 @@ class AuthController extends Controller
     public function register(Request $request):JsonResponse
     {
         $validator = Validator::make($request->all(), [
+            'username_local' => 'required',
+            'username_english' => 'required',
             'email' => 'required|string|email|max:100|unique:users',
             'password' => 'required|string|min:6',
         ]);

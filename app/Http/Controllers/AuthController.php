@@ -63,6 +63,7 @@ class AuthController extends Controller
 
         $user = User::create(array_merge(
             $validator->validated(),
+            ['legal_profile' => $request->inn],
             ['password' => bcrypt($request->password)]
         ));
 
